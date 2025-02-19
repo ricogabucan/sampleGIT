@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Website</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+
+        body {
+            background: linear-gradient(to right, #000000, #020202); 
+            color: #fff; 
+            scroll-behavior: smooth;
+        }
+
+
+        .profile-image {
+            width: 100%; /* This makes the image take the full width of its container */
+            height: 250px; /* Set the same height for the profile image */
+            object-fit: cover; /* Ensures the image covers the space without distortion */
+            border-radius: 10px; /* Optional, for rounded corners */
+            transition: transform 0.3s ease;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.05); /* Slight zoom effect when hovered */
+        }
+
+        .section-title {
+            margin-top: 30px;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+
+        .container {
+            margin-top: 50px;
+        }
+
+
+        .profile-section {
+            background-color: rgba(250, 250, 250, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .social-icons i {
+            font-size: 3rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons i:hover {
+            color: #0d6efd; 
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: white;
+        }
+
+
+        .form-control:invalid {
+            border-color: red;
+        }
+
+        .form-control:valid {
+            border-color: green;
+        }
+
+
+        footer {
+            margin-top: 50px;
+            background-color: #020202;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+
+        .card-body, .card-text {
+            height: 230px; 
+            overflow: hidden;
+            color: black; 
+        }
+        .card-img-top {
+            width: 100%;
+            height: 350px; /* Set the same height for all images */
+            object-fit: cover; /* Ensures the images cover the area without stretching */
+        }
+        .cards {
+    border: 2px solid #000; /* Border around the card */
+    border-radius: 10px; /* Rounded corners for the card */
+    overflow: hidden; /* Ensures content doesn't overflow the border */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds subtle shadow effect */
+    transition: transform 0.3s ease; /* Smooth transition for scale effect */
+    /* background-color: rgba(250, 250, 250, 0.7);  <-- Removed this line */
+}
+
+    /* Optional: Scale effect on hover */
+    .cards:hover {
+        transform: scale(1.05); /* Slight zoom effect when hovered */
+    }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">PortFolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="rico.html">Home</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="row justify-content-center text-center">
+            <div class="col-md-4 profile-section">
+                <img src="https://th.bing.com/th/id/OIP.beU7olu_VHdPxDC7jPP9gQHaHa?rs=1&pid=ImgDetMain" alt="Profile Image" class="profile-image">
+                <h2>Teodirico Javier Gabucan Jr.</h2>
+                <p class="text-muted">Web Developer | Designer</p>
+                <p class="text-muted">Location: Metro Manila, Philippines</p>
+                <div class="social-icons">
+                    <i class='bx bxl-facebook-circle'></i>
+                    <a href="#" class="text-dark mx-2 d-flex align-items-center">
+                        <i class="bi bi-facebook"></i>
+                        <span class="ms-2"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">About Me</h3>
+                <p>Hello! I'm Teodirico Javier Gabucan, I am 23 years old this is my unforgetable moment in my life </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://scontent.fmnl8-6.fna.fbcdn.net/v/t1.15752-9/34266599_1888309431468744_6477140982532931584_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeHP0OUMc787ZUg2C1XQ2NGBc-njcfQJlxVz6eNx9AmXFcQiZL5yjE9RKHLGh1Spbon1XGjW_a4Nqls9_p3WV_5D&_nc_ohc=WPODtBDd0g0Q7kNvgFvOVK1&_nc_oc=AdjdTfx1GOj6OgCLNZMzhkLDRgITG3SPptqMsR_6Q4kxEElkb0ecOd7oZrI8u-BkocA&_nc_ad=z-m&_nc_cid=0&_nc_pt=1&_nc_zt=23&_nc_ht=scontent.fmnl8-6.fna&oh=03_Q7cD1gF2ZcpniFLjtUhvMkXROzcK-WCNyqSAhgagQK2NCQIPeg&oe=67DDA9A5" class="card-img-top" alt="">
+                <div class="card-body">
+                    <p>This is my first champion in basketball, a significant milestone in my life that I hold.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://scontent.fmnl8-6.fna.fbcdn.net/v/t1.15752-9/317790892_1569999850090249_7253799808096348988_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_ohc=1hSdvKLzXJoQ7kNvgHd-u6D&_nc_oc=AdhWzoIrEzjHl1HUrswi2bzQu3VHIP-lVJsJSFFUX_qel5VWmTi_-bcE0VP8bvK9rTE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fmnl8-6.fna&oh=03_Q7cD1gFx4iNwCpqbzeemA0xeF5y7gs3IlBthU8mpvjCiy5IpHw&oe=67DDB1E2" class="card-img-top" alt="">
+                <div class="card-body">
+                    <p>This was the 2nd championship at Teresa de Avila. We worked incredibly hard to achieve this, and the memories will stay with me forever.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://scontent.fmnl8-1.fna.fbcdn.net/v/t39.30808-6/412383756_2167483993643307_3104746992264891682_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=bdeb5f&_nc_eui2=AeE49XtxW9c_EuoJxsT3D6xnx3_YHHw-uVzHf9gcfD65XDeT7aeubpWcroZan8qV8Pzzd72r6JcCha3k41Hdnbd0&_nc_ohc=OkvsoqxdiBcQ7kNvgF9jNut&_nc_oc=Adjh0mMnVUirwErj7Fh8YxLauDMtgA4zLf-Y42tnM40kelkq-ozEcCAozo1bE4U7ktk&_nc_pt=1&_nc_zt=23&_nc_ht=scontent.fmnl8-1.fna&_nc_gid=AO3XecMzWofc_xtyeuBAQrP&oh=00_AYCyRHPXhfkRpB0WgdyZqLXjmewwYJqlAAU6vX0cH7MU-w&oe=67BBF56F" class="card-img-top" alt="">
+                <div class="card-body">
+                    <p>My mentor, Sir/Coach Roy Arsenal, helped me tremendously. His guidance in both basketball and coding has made a lasting impact on my life. Rest in peace, Coach!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<div class="row">
+    <div class="col-md-12">
+        <h3 class="section-title">I LEARNED ABOUT IN INFORMATION TECHNOLOGY</h3>
+    </div>
+</div>
+
+<section id="skills" class="bg-light py-5">
+    <div class="container">
+        <div class="row">
+            <!-- First card -->
+            <div class="col-md-4">
+                <div class="cards">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/VB.NET_Logo.svg/2048px-VB.NET_Logo.svg.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p>VB.NET is an evolution of the older Visual Basic language, and it is designed to be easy to use while being powerful enough to develop a wide range of applications, from simple programs to complex enterprise systems.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second card -->
+            <div class="col-md-4">
+                <div class="cards">
+                    <img src="https://w7.pngwing.com/pngs/257/475/png-transparent-web-development-html5-video-css3-software-development-frontend-web-development-thumbnail.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p>Learned about Frontend technologies like HTML, CSS, and JavaScript. These technologies form the foundation of creating interactive and dynamic web pages.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third card -->
+            <div class="col-md-4">
+                <div class="cards">
+                    <img src="https://cdn-icons-png.flaticon.com/512/8637/8637124.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p>Learned the importance of databases and how to interact with them using SQL. Databases store essential data for many applications, making them a core skill for a developer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <p>&copy; 2025 Teodirico Javier Gabucan Jr. | All Rights Reserved</p>
+        <p>Contact me at: <a href="mailto:teodirico@example.com" class="text-white">teodiricogabucan@gmail.com</a></p>
+    </footer>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            let isValid = true;
+            document.querySelectorAll("input[required], textarea[required]").forEach(function(input) {
+                if (!input.checkValidity()) {
+                    isValid = false;
+                }
+            });
+
+            if (!isValid) {
+                event.preventDefault();
+                alert("Please fill out all required fields.");
+            }
+        });
+    </script>
+</body>
+</html>

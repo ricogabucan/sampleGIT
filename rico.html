@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+            background: linear-gradient(to right, #000000, #0c0b0b); 
+            color: #faf8f8; 
+        }
+
+        .profile-image {
+            width: 200px; 
+            height: 200px; 
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .section-title {
+            margin-top: 30px;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .profile-section {
+            background-color: rgba(226, 219, 219, 0.7); 
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .social-icons i {
+            font-size: 3rem; 
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+       
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">PortFolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="rico.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Projects.html">About me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-md-4 profile-section">
+                <img src="https://th.bing.com/th/id/OIP.beU7olu_VHdPxDC7jPP9gQHaHa?rs=1&pid=ImgDetMain" alt="Profile Image" class="profile-image">
+                <h2>Teodirico Javier Gabucan Jr.</h2>
+                <p class="text-muted">Web Developer | Designer</p>
+                <p class="text-muted">Location: Metro Manila, Philippines</p>
+                <div class="social-icons">
+                    <i class='bx bxl-facebook-circle'></i>
+                    <a href="#" class="text-dark mx-2 d-flex align-items-center">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
