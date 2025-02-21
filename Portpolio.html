@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Website</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Boxicons for social icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+            background: linear-gradient(to right, #1f1f1f, #020202);
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .profile-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.1);
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .profile-section {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-section:hover {
+            transform: scale(1.05);
+        }
+
+        .social-icons i {
+            font-size: 2rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: white;
+            margin: 10px;
+        }
+
+        .social-icons i:hover {
+            color: #00aaff;
+        }
+
+        .navbar {
+            background-color: #222;
+        }
+
+        .navbar .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .navbar .nav-link {
+            color: #fff;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .navbar .nav-link:hover {
+            color: #00aaff;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            border: none;
+            background-color: #222;
+            color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-img-top {
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        footer {
+            margin-top: 50px;
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+            font-size: 1rem;
+        }
+
+        .btn-custom {
+            background-color: #00aaff;
+            border: none;
+            color: #fff;
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #0088cc;
+        }
+
+        #moreContent {
+            display: none;
+            transition: height 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Teodirico's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-me">About Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+    <section id="home" class="py-5 text-center bg-dark text-white">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <!-- Profile Image on the Left -->
+                <div class="col-md-4 text-center text-md-start">
+                    <!-- Circular Profile Image -->
+                    <div class="rounded-circle" style="width: 250px; height: 250px; background-image: url('https://th.bing.com/th/id/OIP.beU7olu_VHdPxDC7jPP9gQHaHa?rs=1&pid=ImgDetMain'); background-size: cover; background-position: center; margin-bottom: 20px;">
+                    </div>
+                </div>
+                
+                <!-- Text on the Right -->
+                <div class="col-md-8 text-center text-md-start">
+                    <h2>Teodirico Javier Gabucan Jr.</h2>
+                    <p class="text-muted">Web Developer | Designer</p>
+                    <p class="text-muted">Location: Metro Manila, Philippines</p>
+                    
+                    <!-- Social Media Icons -->
+                    <div class="social-icons mt-3">
+                        <a href="#" class="text-white mx-2">
+                            <i class="bx bxl-facebook-circle" style="font-size: 2rem;"></i>
+                        </a>
+                        <a href="#" class="text-white mx-2">
+                            <i class="bx bxl-twitter" style="font-size: 2rem;"></i>
+                        </a>
+                        <a href="#" class="text-white mx-2">
+                            <i class="bx bxl-instagram" style="font-size: 2rem;"></i> <!-- Changed to Instagram -->
+                        </a>
+                        <!-- Add more social media icons as needed -->
+                    </div>
+                    
+                    <div class="mt-4">
+                        <h3>Welcome to My Portfolio</h3>
+                        <p>Hello! I’m Teodirico Javier Gabucan Jr., a passionate Web Developer and Designer based in Metro Manila, Philippines. I specialize in creating user-friendly websites and applications that are both functional and visually appealing.</p>
+                        <p>I'm constantly learning and improving my skills in front-end and back-end development, UI/UX design, and digital problem-solving.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+
+    <section id="about-me" class="py-5 text-center bg-dark">
+        <div class="container">
+            <h3 class="section-title">About Me</h3>
+            <p>I am 23 years old and passionate about both technology and basketball. One of my most memorable milestones is winning championships and growing as both a player and a developer.</p>
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://scontent.fmnl8-6.fna.fbcdn.net/v/t1.15752-9/34266599_1888309431468744_6477140982532931584_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeHP0OUMc787ZUg2C1XQ2NGBc-njcfQJlxVz6eNx9AmXFcQiZL5yjE9RKHLGh1Spbon1XGjW_a4Nqls9_p3WV_5D&_nc_ohc=WPODtBDd0g0Q7kNvgFvOVK1&_nc_oc=AdjdTfx1GOj6OgCLNZMzhkLDRgITG3SPptqMsR_6Q4kxEElkb0ecOd7oZrI8u-BkocA&_nc_ad=z-m&_nc_cid=0&_nc_pt=1&_nc_zt=23&_nc_ht=scontent.fmnl8-6.fna&oh=03_Q7cD1gF2ZcpniFLjtUhvMkXROzcK-WCNyqSAhgagQK2NCQIPeg&oe=67DDA9A5" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p>This is my first championship in basketball, a significant milestone in my life.  It was a moment filled with hard work, dedication, and perseverance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://scontent.fmnl8-6.fna.fbcdn.net/v/t1.15752-9/317790892_1569999850090249_7253799808096348988_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_ohc=1hSdvKLzXJoQ7kNvgHd-u6D&_nc_oc=AdhWzoIrEzjHl1HUrswi2bzQu3VHIP-lVJsJSFFUX_qel5VWmTi_-bcE0VP8bvK9rTE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fmnl8-6.fna&oh=03_Q7cD1gFx4iNwCpqbzeemA0xeF5y7gs3IlBthU8mpvjCiy5IpHw&oe=67DDB1E2" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p>This was the 2nd championship at Teresa de Avila. We worked incredibly hard to achieve this, and the memories will stay with me forever.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://scontent.fmnl8-1.fna.fbcdn.net/v/t39.30808-6/412383756_2167483993643307_3104746992264891682_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=bdeb5f&_nc_eui2=AeE49XtxW9c_EuoJxsT3D6xnx3_YHHw-uVzHf9gcfD65XDeT7aeubpWcroZan8qV8Pzzd72r6JcCha3k41Hdnbd0&_nc_ohc=OkvsoqxdiBcQ7kNvgF9jNut&_nc_oc=Adjh0mMnVUirwErj7Fh8YxLauDMtgA4zLf-Y42tnM40kelkq-ozEcCAozo1bE4U7ktk&_nc_pt=1&_nc_zt=23&_nc_ht=scontent.fmnl8-1.fna&_nc_gid=AO3XecMzWofc_xtyeuBAQrP&oh=00_AYCyRHPXhfkRpB0WgdyZqLXjmewwYJqlAAU6vX0cH7MU-w&oe=67BBF56F" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p>My mentor, Sir/Coach Roy Arsenal, helped me tremendously. His guidance in both basketball and coding has made a lasting impact on my life. Rest in peace, Coach!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="row justify-content-center text-center">
+        <div class="col-md-12">
+            <h3 class="section-title">I LEARNED ABOUT IN INFORMATION TECHNOLOGY</h3>
+        </div>
+    </div>
+    
+    <section id="skills" class="py-5" style="background-color: #000;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- First card -->
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-light">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/VB.NET_Logo.svg/2048px-VB.NET_Logo.svg.png" class="card-img-top" alt="VB.NET">
+                    <div class="card-body">
+                        <h5 class="card-title">VB.NET</h5>
+                        <p class="card-text">VB.NET is an evolution of the older Visual Basic language, and it is designed to be easy to use while being powerful enough to develop a wide range of applications, from simple programs to complex enterprise systems.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second card -->
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-light">
+                    <img src="https://w7.pngwing.com/pngs/257/475/png-transparent-web-development-html5-video-css3-software-development-frontend-web-development-thumbnail.png" class="card-img-top" alt="Frontend Development">
+                    <div class="card-body">
+                        <h5 class="card-title">Frontend Development</h5>
+                        <p class="card-text">Learning frontend development starts with understanding the basics of HTML for structuring content, CSS for styling, and JavaScript for adding interactivity. Hands-on practice through building small projects, exploring frameworks like React or Vue, and following online tutorials can accelerate the learning process. </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third card -->
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-light">
+                    <img src="https://cdn-icons-png.flaticon.com/512/8637/8637124.png" class="card-img-top" alt="Database">
+                    <div class="card-body">
+                        <h5 class="card-title">Database Management</h5>
+                        <p class="card-text">Learned the importance of databases and how to interact with them using SQL. Databases store essential data for many applications, making them a core skill for a developer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+    
+    
+
+    <footer>
+        <p>&copy; 2025 Teodirico Javier Gabucan Jr. | All Rights Reserved</p>
+        <p>Contact me at: <a href="mailto:teodirico@example.com" class="text-white">teodiricogabucan@gmail.com</a></p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // See More / See Less functionality
